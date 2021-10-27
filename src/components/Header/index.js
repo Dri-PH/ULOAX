@@ -1,10 +1,10 @@
-import { useStaticQuery } from "gatsby";
+import { graphql , useStaticQuery } from "gatsby";
 import React from "react";
 import * as S from "./styles";
 
 export function Header() {
   const data = useStaticQuery(graphql`
-    query {
+    query{
       taxidata{
         headers {
           btncasa
@@ -21,12 +21,14 @@ export function Header() {
             url
           }
           taxipng2 {
-              url
+            url
           }
           taxipng3 {
             url
+          }
+          divtitle
         }
-      }    
+      }
     }
   `)
 
@@ -45,6 +47,8 @@ export function Header() {
   } = data.taxidata.headers[0]
 
     return (
-        {btncasa}
+      <div>
+        <p>{btncasa}</p>
+      </div>
     )
 }

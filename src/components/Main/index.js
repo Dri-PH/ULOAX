@@ -1,47 +1,17 @@
-import { useStaticQuery } from "gatsby";
+import { graphql , useStaticQuery } from "gatsby";
 import React from "react";
 import * as S from "./styles";
 
 export function Main() {
 
   const data = useStaticQuery(graphql`
+   
     query {
       taxidata{
         mains {
-          backgroundtaxi {
+          backgroundtaxi{
             url
           }
-          btnagnedeagr
-          divcar1
-          divcar2
-          divcar3
-          divcarimg {
-            url
-          }
-          divcarparagraph
-          divlist1
-          divlist2
-          divlist3
-          passeiosimg1 {
-            url
-          }
-          passeiosimg2 {
-            url
-          }
-          passeiosparagraph
-          passeiostitle
-          titlebaixe
-          titlenossoapp
-          titlebaixeapp
-          titleh1
-          uloaximg1 {
-            url
-          }
-          uloaximg2 {
-            url
-          }
-          uloaxparagraph
-          uloaxtitle
         }
       }
     }
@@ -72,6 +42,8 @@ export function Main() {
     uloaxtitle
   } = data.taxidata.mains[0]
     return(
-      <p>oi</p>
+        <div>
+          <p>{btnagnedeagr}</p>
+        </div>
     )
 }
