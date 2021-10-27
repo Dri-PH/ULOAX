@@ -7,7 +7,7 @@ export function Header({
     btnreserva,
     btntaxi,
     createdAt,
-    divparagraph,
+    divtitle,
     logo,
     paragraph,
     paragraphagendeagr,
