@@ -9,9 +9,38 @@ export function Main() {
     query {
       taxidata{
         mains {
-          backgroundtaxi{
+          backgroundtaxi {
             url
           }
+          btnagnedeagr
+          divcar1
+          divcar2
+          divcar3
+          divcarimg {
+            url
+          }
+          divcarparagraph
+          divlist1
+          divlist2
+          divlist3
+          passeiosimg1 {
+            url
+          }
+          passeiosimg2 {
+            url
+          }
+          passeiosparagraph
+          passeiostitle
+          titlebaixeapp
+          titleh1
+          uloaximg1 {
+            url
+          }
+          uloaximg2 {
+            url
+          }
+          uloaxparagraph
+          uloaxtitle
         }
       }
     }
@@ -31,8 +60,6 @@ export function Main() {
     passeiosimg2,
     passeiosparagraph,
     passeiostitle,
-    titlebaixe,
-    titlenossoapp,
     titlebaixeapp,
     titleh1,
     uloaximg1,
@@ -43,7 +70,7 @@ export function Main() {
   } = data.taxidata.mains[0]
     return(
         <div>
-          <p>{btnagnedeagr}</p>
+          <p></p>
         </div>
     )
 }

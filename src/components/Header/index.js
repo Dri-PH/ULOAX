@@ -1,6 +1,7 @@
 import { graphql , useStaticQuery } from "gatsby";
 import React from "react";
 import * as S from "./styles";
+import GlobalStyle from "./GlobalStyles";
 
 export function Header() {
   const data = useStaticQuery(graphql`
@@ -11,7 +12,6 @@ export function Header() {
           btneecc
           btnreserva
           btntaxi
-          divtitle
           logo {
             url
           }
@@ -47,8 +47,24 @@ export function Header() {
   } = data.taxidata.headers[0]
 
     return (
-      <div>
-        <p>{btncasa}</p>
-      </div>
+      <S.Container>
+        <GlobalStyle />
+        <S.Navbar>
+          <div>
+            <img src={logo.url} alt="ULOAX"/>
+          </div>
+          <nav>
+            <button>{btncasa}</button>
+            <button>{btntaxi}</button>
+            <button>{btnreserva}</button>
+            <button>{btneecc}</button>
+          </nav>
+        </S.Navbar>
+        <S.SlydeCaruosel>
+          <div>
+            <p>{paragraphagendeagr}</p>
+          </div>
+        </S.SlydeCaruosel>
+      </S.Container>
     )
 }
