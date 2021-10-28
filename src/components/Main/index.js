@@ -69,8 +69,38 @@ export function Main() {
     uloaxtitle
   } = data.taxidata.mains[0]
     return(
-        <div>
-          <p></p>
-        </div>
+       <S.Container>
+         <S.NavContainer>
+            <S.NavTitle>
+              <h1>{titleh1}</h1>
+            </S.NavTitle>
+            <S.NavHub>
+              <S.NavCards>
+                <h2>{divlist1}</h2>
+                <h3>{divcar1}</h3>
+                <p>{divcarparagraph}</p>
+                <figure>
+                  <img src={divcarimg.url} alt="Imagem TAXI" />
+                </figure>
+              </S.NavCards>
+              <S.NavCards>
+                <h2>{divlist2}</h2>
+                <h3>{divcar2}</h3>
+                <p>{divcarparagraph}</p>
+                <figure>
+                  <img src={divcarimg.url} alt="Imagem TAXI" />
+                </figure>
+              </S.NavCards>
+              <S.NavCards>
+                <h2>{divlist3}</h2>
+                <h3>{divcar3}</h3>
+                <p>{divcarparagraph}</p>
+                <figure>
+                  <img src={divcarimg.url} alt="Imagem TAXI" />
+                </figure>
+              </S.NavCards>
+            </S.NavHub>
+         </S.NavContainer>
+       </S.Container>
     )
 }

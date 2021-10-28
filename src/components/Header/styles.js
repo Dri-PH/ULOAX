@@ -41,4 +41,5 @@ export const SlydeCaruosel = styled.div`
     background: rgba(19,19,19,1);
     height:82vh;
     box-shadow: inset 0 0 50px 0 rgba(0,0,0,1);
+    color:red;
 `;
