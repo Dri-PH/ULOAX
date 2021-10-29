@@ -42,4 +42,12 @@ export const SlydeCarousel = styled.div`
     height:82vh;
     box-shadow: inset 0 0 50px 0 rgba(0,0,0,1);
     color:red;
+    overflow-x: auto;
+    border:solid 3px lightgreen;
+    display:flex;
+    flex-direction:column;
 `;
+export const SliderDiv = styled.div`
+    border:solid 3px red;
+    height:100%;
+`; 
