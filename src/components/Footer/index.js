@@ -69,10 +69,39 @@ export function Footer() {
     subscribe
   } = data.taxidata.footers[0];
 
+  console.log("teste", data);
+
   return (
-    <div>
-      console.log("teste",data)
-      {address}
-    </div>
+    <>
+      <S.Container>
+        <S.Box>
+          <S.Title>{address}</S.Title>
+          <S.Paragraph>lorem</S.Paragraph>
+        </S.Box>
+        <S.Box>
+          <S.Title>{links}</S.Title>
+          <S.List>{home}</S.List>
+          <S.List>{about}</S.List>
+          <S.List>{taxi}</S.List>
+          <S.List>{booking}</S.List>
+          <S.List>{contactus}</S.List>
+        </S.Box>
+        <S.Box>
+          <S.Ul>
+            <S.Title>{followus}</S.Title>
+            <S.List>{facebook}</S.List>
+            <S.List>{twitter}</S.List>
+            <S.List>{linkedin}</S.List>
+            <S.List>{youtube}</S.List>
+            <S.List>{instagram}</S.List>
+          </S.Ul>
+        </S.Box>
+        <S.Box>
+          <S.Title>{newsletter}</S.Title>
+
+          <S.Subscribe>{subscribe}</S.Subscribe>
+        </S.Box>
+      </S.Container>
+    </>
   );
 }
