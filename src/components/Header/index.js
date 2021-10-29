@@ -1,7 +1,9 @@
-import { graphql , useStaticQuery } from "gatsby";
 import React from "react";
+import { graphql , useStaticQuery } from "gatsby";
 import * as S from "./styles";
 import GlobalStyle from "./GlobalStyles";
+import Slider from "react-slick";
+
 
 export function Header() {
   const data = useStaticQuery(graphql`
@@ -46,6 +48,13 @@ export function Header() {
     taxipng3 
   } = data.taxidata.headers[0]
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
     return (
       <S.Container>
         <GlobalStyle />
@@ -60,11 +69,19 @@ export function Header() {
             <button>{btneecc}</button>
           </nav>
         </S.Navbar>
-        <S.SlydeCaruosel>
-          <div>
-            <p>{paragraphagendeagr}</p>
-          </div>
-        </S.SlydeCaruosel>
+        <S.SlydeCarousel>
+          <Slider {...settings}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+          </Slider>
+        </S.SlydeCarousel>
       </S.Container>
     )
 }
