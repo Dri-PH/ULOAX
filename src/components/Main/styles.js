@@ -39,17 +39,19 @@ export const NavHub = styled.nav`
 `;
 export const NavCards = styled.div`
     display:flex;
-    flex-direction: column;
-    justify-content:center;
+    flex-direction:column;
     align-itens:center;
-    border:solid green 1px;
+    justify-content:center;
+    border:solid red 1px;
     background:#fff;
     width:27%;
     h2{
         border:solid green 1px;
+        width:50%;
     }
     h3{
         border:solid green 1px;
+        width:50%;
     }
     p{
         border:solid green 1px;
@@ -59,4 +61,31 @@ export const NavCards = styled.div`
     img{
         width:100%;
     }
+`;
+
+
+
+
+
+export const AboutContainer = styled.section`
+    border:solid purple 3px;
+    display:flex;
+    flex-direction:column;
+`;
+export const AboutTitle = styled.div`
+    border:solid orange 3px;
+    h2{
+
+    }
+`;
+export const AboutContent = styled.div`
+    border:solid darkgreen 3px;
+    display:flex;
+    justify-content:center;
+`;
+export const LocationContainer = styled.section`
+    display:flex;
+    background: url(${props => props.back});
+    background-size: cover;
+    
 `;

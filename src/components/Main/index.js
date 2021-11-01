@@ -1,5 +1,6 @@
 import { graphql , useStaticQuery } from "gatsby";
 import React from "react";
+import GlobalStyle from "./GlobalStyles";
 import * as S from "./styles";
 
 export function Main() {
@@ -29,6 +30,7 @@ export function Main() {
           passeiosimg2 {
             url
           }
+          mainsubtitle
           passeiosparagraph
           passeiostitle
           titlebaixeapp
@@ -41,11 +43,15 @@ export function Main() {
           }
           uloaxparagraph
           uloaxtitle
+          gpsimg{
+            url
+          }
         }
       }
     }
   `)
   const { 
+    mainsubtitle,
     backgroundtaxi,
     btnagnedeagr,
     divcar1,
@@ -64,13 +70,15 @@ export function Main() {
     titleh1,
     uloaximg1,
     uloaximg2,
-    uloaximg3,
     uloaxparagraph,
     uloaxtitle,
-    mainsubtitle
+    gpsimg
   } = data.taxidata.mains[0]
+
+
     return(
         <S.Container>
+          <GlobalStyle />
           <S.NavContainer>
             <S.NavTitle>
               <h1>{titleh1}</h1>
@@ -102,51 +110,68 @@ export function Main() {
               </S.NavCards>
             </S.NavHub>
           </S.NavContainer>
-          <div>
-            <div>
+
+
+
+          <S.AboutContainer>
+            <S.AboutTitle>
               <h2>{mainsubtitle}</h2>
-            </div>
-            <div>
+            </S.AboutTitle>
+
+
+            <S.AboutContent>
               <figure>
-                <img src={} alt="" />
+                <img src={uloaximg1.url} alt="DECOY" />
               </figure>
               <div>
                 <h3>{uloaxtitle}</h3>
                 <p>{uloaxparagraph}</p>
                 <button>{btnagnedeagr}</button>
               </div>
-            </div>
-            <div>
+            </S.AboutContent>
+            <S.AboutContent>
               <div>
                 <h3>{passeiostitle}</h3>
                 <p>{uloaxparagraph}</p>
                 <button>{btnagnedeagr}</button>
               </div>
               <figure>
-                <img src={} alt="" />
+                <img src={uloaximg2.url} alt="DECOY" />
               </figure>
-            </div>
-            <div>
+            </S.AboutContent>
+            <S.AboutContent>
               <figure>
-                <img src={} alt="" />
+                <img src={uloaximg2.url} alt="DECOY" />
               </figure>
               <div>
                 <h3>{uloaxtitle}</h3>
                 <p>{uloaxparagraph}</p>
                 <button>{btnagnedeagr}</button>
               </div>
-            </div>
-            <div>
+            </S.AboutContent>
+            <S.AboutContent>
               <div>
                 <h3>{passeiostitle}</h3>
                 <p>{uloaxparagraph}</p>
                 <button>{btnagnedeagr}</button>
               </div>
               <figure>
-                <img src={} alt="" />
+                <img src={uloaximg1.url} alt="DECOY" />
               </figure>
+            </S.AboutContent>
+          </S.AboutContainer>
+
+
+
+
+          <S.LocationContainer back={backgroundtaxi.url}>
+            <div>
+              <h2>{titlebaixeapp}</h2>
             </div>
-          </div>
+            <figure>
+              <img src={gpsimg.url} alt="GPS" />
+            </figure>
+          </S.LocationContainer>
         </S.Container>
     )
 }

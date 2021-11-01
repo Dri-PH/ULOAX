@@ -38,7 +38,6 @@ export function Footer() {
             url
           }
           newsletter
-          inputenter
           subscribe
         }
       }
@@ -65,7 +64,6 @@ export function Footer() {
     iconinstagram,
     iconlinkedin,
     newsletter,
-    inputenter,
     subscribe
   } = data.taxidata.footers[0];
 
@@ -76,7 +74,7 @@ export function Footer() {
       <S.Container>
         <S.Box>
           <S.Title>{address}</S.Title>
-          <S.Paragraph>lorem</S.Paragraph>
+          <S.Paragraph>{lorem}</S.Paragraph>
         </S.Box>
         <S.Box>
           <S.Title>{links}</S.Title>
@@ -98,7 +96,6 @@ export function Footer() {
         </S.Box>
         <S.Box>
           <S.Title>{newsletter}</S.Title>
-
           <S.Subscribe>{subscribe}</S.Subscribe>
         </S.Box>
       </S.Container>

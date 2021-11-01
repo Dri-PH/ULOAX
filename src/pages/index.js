@@ -6,7 +6,7 @@ import { Main } from "../components/Main";
 export default function Index() {
   return (
     <div>
-      <Header />
+      <Header/>
       <Main />
       <Footer />
     </div>
