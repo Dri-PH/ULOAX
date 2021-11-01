@@ -70,25 +70,26 @@ export function Header() {
           </nav>
         </S.Navbar>
         <S.SlydeCarousel>
-          <Slider {...settings}>
-            <S.SliderDiv>
-              <span>
-                <div>
-                  <h1>{paragraphagendeagr}</h1>
-                </div>
-                <figure>
-                  <img src={taxipng1.url} alt="Iamgem Táxi" />
-                </figure>
-              </span>
-            </S.SliderDiv>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-
-          </Slider>
+        <Slider {...settings}>
+      <div>
+        <h3>1</h3>
+      </div>
+      <div>
+        <h3>2</h3>
+      </div>
+      <div>
+        <h3>3</h3>
+      </div>
+      <div>
+        <h3>4</h3>
+      </div>
+      <div>
+        <h3>5</h3>
+      </div>
+      <div>
+        <h3>6</h3>
+      </div>
+    </Slider>
         </S.SlydeCarousel>
       </S.Container>
     )

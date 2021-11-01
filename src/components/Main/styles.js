@@ -7,11 +7,11 @@ export const Container = styled.section`
 `;
 export const NavContainer =styled.section`
 
-    margin-top:5em;
+    margin-top:5rem;
     heigh:70rem;
     display:flex;
     flex-direction:column;
-    
+    justify-content:space evenly;
     border:solid purple 3px;
     background: rgba(16,21,25,1);
     box-shadow: inset 0 0 100px 0 rgba(0,0,0,1);
@@ -40,23 +40,23 @@ export const NavHub = styled.nav`
 export const NavCards = styled.div`
     display:flex;
     flex-direction:column;
-    align-itens:center;
-    justify-content:center;
-    border:solid red 1px;
+    border:solid orange 3px;
     background:#fff;
-    width:27%;
+    width:20rem;
     h2{
         border:solid green 1px;
-        width:50%;
+  
     }
     h3{
         border:solid green 1px;
-        width:50%;
+        text-align:center;
+      ;
     }
     p{
         border:solid green 1px;
         font-size:1rem;
-        width:50%;
+        text-align:center;
+        width:8rem;
     }
     img{
         width:100%;
@@ -84,8 +84,14 @@ export const AboutContent = styled.div`
     justify-content:center;
 `;
 export const LocationContainer = styled.section`
-    display:flex;
+border:solid green 3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
     background: url(${props => props.back});
     background-size: cover;
-    
+    img{
+        border: solid darkgreen 3px;
+        width:100%;
+    }
 `;

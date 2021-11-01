@@ -92,6 +92,7 @@ export function Main() {
                   <img src={divcarimg.url} alt="Imagem TAXI" />
                 </figure>
               </S.NavCards>
+              
               <S.NavCards>
                 <h2>{divlist2}</h2>
                 <h3>{divcar2}</h3>
@@ -100,6 +101,7 @@ export function Main() {
                   <img src={divcarimg.url} alt="Imagem TAXI" />
                 </figure>
               </S.NavCards>
+
               <S.NavCards>
                 <h2>{divlist3}</h2>
                 <h3>{divcar3}</h3>
