@@ -66,11 +66,12 @@ export function Main() {
     uloaximg2,
     uloaximg3,
     uloaxparagraph,
-    uloaxtitle
+    uloaxtitle,
+    mainsubtitle
   } = data.taxidata.mains[0]
     return(
-       <S.Container>
-         <S.NavContainer>
+        <S.Container>
+          <S.NavContainer>
             <S.NavTitle>
               <h1>{titleh1}</h1>
             </S.NavTitle>
@@ -100,7 +101,52 @@ export function Main() {
                 </figure>
               </S.NavCards>
             </S.NavHub>
-         </S.NavContainer>
-       </S.Container>
+          </S.NavContainer>
+          <div>
+            <div>
+              <h2>{mainsubtitle}</h2>
+            </div>
+            <div>
+              <figure>
+                <img src={} alt="" />
+              </figure>
+              <div>
+                <h3>{uloaxtitle}</h3>
+                <p>{uloaxparagraph}</p>
+                <button>{btnagnedeagr}</button>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3>{passeiostitle}</h3>
+                <p>{uloaxparagraph}</p>
+                <button>{btnagnedeagr}</button>
+              </div>
+              <figure>
+                <img src={} alt="" />
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src={} alt="" />
+              </figure>
+              <div>
+                <h3>{uloaxtitle}</h3>
+                <p>{uloaxparagraph}</p>
+                <button>{btnagnedeagr}</button>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3>{passeiostitle}</h3>
+                <p>{uloaxparagraph}</p>
+                <button>{btnagnedeagr}</button>
+              </div>
+              <figure>
+                <img src={} alt="" />
+              </figure>
+            </div>
+          </div>
+        </S.Container>
     )
 }

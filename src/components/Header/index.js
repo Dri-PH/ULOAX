@@ -49,7 +49,7 @@ export function Header() {
   } = data.taxidata.headers[0]
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
