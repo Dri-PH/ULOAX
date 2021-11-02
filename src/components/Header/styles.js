@@ -34,7 +34,6 @@ export const Navbar = styled.div`
             transition-delay: 500ms;
             filter: brightness(175%);
         }
-    
     }
 `;
 export const SlydeCarousel = styled.div`

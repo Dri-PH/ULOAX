@@ -85,16 +85,20 @@ export function Main() {
             </S.NavTitle>
             <S.NavHub>
               <S.NavCards>
-                <h2>{divlist1}</h2>
+                <span>
+                  <h2>{divlist1}</h2>
+                </span>
                 <h3>{divcar1}</h3>
                 <p>{divcarparagraph}</p>
                 <figure>
                   <img src={divcarimg.url} alt="Imagem TAXI" />
                 </figure>
               </S.NavCards>
-              
+
               <S.NavCards>
-                <h2>{divlist2}</h2>
+                <span>
+                  <h2>{divlist2}</h2>
+                </span>
                 <h3>{divcar2}</h3>
                 <p>{divcarparagraph}</p>
                 <figure>
@@ -103,7 +107,9 @@ export function Main() {
               </S.NavCards>
 
               <S.NavCards>
-                <h2>{divlist3}</h2>
+                <span>
+                  <h2>{divlist3}</h2>
+                </span>
                 <h3>{divcar3}</h3>
                 <p>{divcarparagraph}</p>
                 <figure>
@@ -132,11 +138,11 @@ export function Main() {
               </div>
             </S.AboutContent>
             <S.AboutContent>
-              <div>
+              <S.SimbligsEnd>
                 <h3>{passeiostitle}</h3>
                 <p>{uloaxparagraph}</p>
                 <button>{btnagnedeagr}</button>
-              </div>
+              </S.SimbligsEnd>
               <figure>
                 <img src={uloaximg2.url} alt="DECOY" />
               </figure>
@@ -152,11 +158,11 @@ export function Main() {
               </div>
             </S.AboutContent>
             <S.AboutContent>
-              <div>
+              <S.SimbligsEnd>
                 <h3>{passeiostitle}</h3>
                 <p>{uloaxparagraph}</p>
                 <button>{btnagnedeagr}</button>
-              </div>
+              </S.SimbligsEnd>
               <figure>
                 <img src={uloaximg1.url} alt="DECOY" />
               </figure>
