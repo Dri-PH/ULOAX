@@ -23,7 +23,8 @@ export const NavTitle = styled.div`
     justify-content:center;
     h1{
         font-size:3rem;
-        color:yellow;
+        color:#fd7e14;
+        filter: brightness(175%);
         &::before {
             content: "Nosso";
             color: white;
@@ -54,7 +55,8 @@ export const NavCards = styled.div`
         top:-1.3rem;
         width:4rem;
         height:4rem;
-        background:yellow;
+        background:#fd7e14;
+        filter: brightness(175%);
         border-radius:50%;
     }
     h2{
@@ -92,7 +94,8 @@ export const AboutTitle = styled.div`
         text-align:center;
         border-bottom:#000 solid 1px;
         font-size:3.5rem;
-        color:yellow;
+        color:#fd7e14;
+        filter: brightness(175%);
         &::before {
             content: "Por que andar";
             color: black;
