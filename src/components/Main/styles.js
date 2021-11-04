@@ -148,15 +148,40 @@ export const SimbligsEnd = styled.div`
 
 /*Section03 Baixe Nosso App*/
 export const LocationContainer = styled.section`
-    border:solid 1px;
     display: flex;
     justify-content: flex-end;
-    align-items: stretch;
     background: url(${props => props.back});
     background-size: cover;
+    margin-bottom:5rem;
+    span{
+        height:40rem;
+        display: flex;
+        align-items: center;
+
+    }
+    div{
+        height:10rem;
+        width:25rem;
+        margin-top:-18rem;
+    }
+    h2{
+        font-size:3rem;
+        font-weight: lighter;
+        align-text:center;
+        color:#fff;
+        filter: brightness(99%);
+        &::before {
+            content: "BAIXE";
+            color: black;
+            position: absolute;
+          }
+    }
+`;
+export const LocationFigure = styled.figure`
+    display: flex;
+    justify-content: flex-end;
     img{
-        border: solid darkgreen 3px;
-        width:100%;
+        width:80%;
     }
 `;
 //////////////////Section03////////////////////

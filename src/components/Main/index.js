@@ -140,11 +140,11 @@ export function Main() {
             <S.AboutContent>
               <S.SimbligsEnd>
                 <h3>{passeiostitle}</h3>
-                <p>{uloaxparagraph}</p>
+                <p>{passeiosparagraph}</p>
                 <button>{btnagnedeagr}</button>
               </S.SimbligsEnd>
               <figure>
-                <img src={uloaximg2.url} alt="DECOY" />
+                <img src={passeiosimg1.url} alt="DECOY" />
               </figure>
             </S.AboutContent>
             <S.AboutContent>
@@ -160,11 +160,11 @@ export function Main() {
             <S.AboutContent>
               <S.SimbligsEnd>
                 <h3>{passeiostitle}</h3>
-                <p>{uloaxparagraph}</p>
+                <p>{passeiosparagraph}</p>
                 <button>{btnagnedeagr}</button>
               </S.SimbligsEnd>
               <figure>
-                <img src={uloaximg1.url} alt="DECOY" />
+                <img src={uloaximg2.url} alt="DECOY" />
               </figure>
             </S.AboutContent>
           </S.AboutContainer>
@@ -173,12 +173,14 @@ export function Main() {
 
 
           <S.LocationContainer back={backgroundtaxi.url}>
-            <div>
-              <h2>{titlebaixeapp}</h2>
-            </div>
-            <figure>
-              <img src={gpsimg.url} alt="GPS" />
-            </figure>
+            <span>
+              <div>
+                <h2>{titlebaixeapp}</h2>
+              </div>
+              <S.LocationFigure>
+                <img src={gpsimg.url} alt="GPS" />
+              </S.LocationFigure>
+            </span>
           </S.LocationContainer>
         </S.Container>
     )
