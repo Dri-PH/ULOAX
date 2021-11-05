@@ -2,7 +2,9 @@ import React from "react";
 import { graphql , useStaticQuery } from "gatsby";
 import * as S from "./styles";
 import GlobalStyle from "./GlobalStyles";
-import Slider from "react-slick";
+import { Slick } from "./slick"
+
+
 
 
 export function Header() {
@@ -17,18 +19,6 @@ export function Header() {
           logo {
             url
           }
-          paragraph
-          paragraphagendeagr
-          taxipng1 {
-            url
-          }
-          taxipng2 {
-            url
-          }
-          taxipng3 {
-            url
-          }
-          divtitle
         }
       }
     }
@@ -39,22 +29,9 @@ export function Header() {
     btneecc, 
     btnreserva,  
     btntaxi, 
-    divtitle,
-    logo, 
-    paragraph,  
-    paragraphagendeagr,  
-    taxipng1,  
-    taxipng2, 
-    taxipng3 
+    logo
   } = data.taxidata.headers[0]
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
     return (
       <S.Container>
         <GlobalStyle />
@@ -70,26 +47,7 @@ export function Header() {
           </nav>
         </S.Navbar>
         <S.SlydeCarousel>
-          <Slider {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
+          <Slick />
         </S.SlydeCarousel>
       </S.Container>
     )

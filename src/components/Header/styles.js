@@ -6,10 +6,7 @@ export const Container = styled.section`
 `;
 export const Navbar = styled.div`
     height:10vh;
-    background: linear-gradient( 0deg, 
-        rgba(41,41,41,1) 0%, 
-        rgba(19,19,19,1) 34%, 
-        rgba(0,0,0,1) 100%);
+    background: rgba(19,19,19,1);
 
     display:flex;
     align-items: center;
@@ -38,15 +35,55 @@ export const Navbar = styled.div`
 `;
 export const SlydeCarousel = styled.div`
     background: rgba(19,19,19,1);
-    height:82vh;
     box-shadow: inset 0 0 50px 0 rgba(0,0,0,1);
     color:red;
-    overflow-x: auto;
-    border:solid 3px lightgreen;
+    width:100%;
+`;
+////////////Slick.js//////////////
+export const SliderFace = styled.div`
+    border:solid 2px red;
+    display:flex;
+
+    div{
+        filter: brightness(160%);
+        background:#fd7e14;
+        display:flex;
+        justify-content:center;
+        width:25rem;
+
+    }
+    p{
+        border:solid 2px red;
+        text-align:center;
+        font-size:2.5rem;
+        color:black;
+        &::before {
+            content: "AGENDE AGORA";
+            color: white;
+            position: absolute;
+          }
+    }
+    figure{
+        border:solid 2px red;
+        width:30rem;
+    }
+    img{
+        width:100%;
+    }
+`;
+export const DivCar = styled.div`
     display:flex;
     flex-direction:column;
+    align-items:center;
+    border:solid 2px blue;
+    div{
+        filter: brightness(160%);
+        background:#fd7e14;
+        display:flex;
+        justify-content:center;
+        width:25rem;
+
+    }
 `;
-export const SliderDiv = styled.div`
-    border:solid 3px red;
-    height:100%;
-`; 
+
+//////////////////////////////////
