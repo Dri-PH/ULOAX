@@ -63,7 +63,6 @@ export function Main() {
     divlist2,
     divlist3,
     passeiosimg1,
-    passeiosimg2,
     passeiosparagraph,
     passeiostitle,
     titlebaixeapp,

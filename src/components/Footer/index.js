@@ -18,6 +18,7 @@ export function Footer() {
           contactus
           followus
           facebook
+          copyright
           twitter
           linkedin
           youtube
@@ -32,6 +33,9 @@ export function Footer() {
             url
           }
           iconinstagram {
+            url
+          }
+          icon {
             url
           }
           iconlinkedin {
@@ -58,12 +62,14 @@ export function Footer() {
     linkedin,
     youtube,
     instagram,
+    icon,
     iconfacebook,
     icontwitter,
     iconyoutube,
     iconinstagram,
     iconlinkedin,
     newsletter,
+    copyright,
     subscribe
   } = data.taxidata.footers[0];
 
@@ -71,34 +77,63 @@ export function Footer() {
 
   return (
     <>
+      <S.Transitionfooter>
+        <p>Esater-egg</p>
+      </S.Transitionfooter>
       <S.Container>
         <S.Box>
           <S.Title>{address}</S.Title>
-          <S.Paragraph>{lorem}</S.Paragraph>
+          <p>{lorem}</p>
         </S.Box>
         <S.Box>
           <S.Title>{links}</S.Title>
-          <S.List>{home}</S.List>
-          <S.List>{about}</S.List>
-          <S.List>{taxi}</S.List>
-          <S.List>{booking}</S.List>
-          <S.List>{contactus}</S.List>
+          <section>
+            <nav>
+              <img src={icon.url} alt="icon " />
+              <img src={icon.url} alt="Icon " />
+              <img src={icon.url} alt="Icon " />
+              <img src={icon.url} alt="Icon " />
+              <img src={icon.url} alt="Icon " />
+            </nav>
+            <ul>
+              <li>{home}</li>
+              <li>{about}</li>
+              <li>{taxi}</li>
+              <li>{booking}</li>
+              <li>{contactus}</li>
+            </ul>
+          </section>
         </S.Box>
         <S.Box>
-          <S.Ul>
-            <S.Title>{followus}</S.Title>
-            <S.List>{facebook}</S.List>
-            <S.List>{twitter}</S.List>
-            <S.List>{linkedin}</S.List>
-            <S.List>{youtube}</S.List>
-            <S.List>{instagram}</S.List>
-          </S.Ul>
+          <S.Title>{followus}</S.Title>
+          <section>
+            <nav>
+              <img src={iconfacebook.url} alt="icon Facebook" />
+              <img src={icontwitter.url} alt="Icon Twitter" />
+              <img src={iconlinkedin.url} alt="Icon linkedin" />
+              <img src={iconyoutube.url} alt="Icon Youtube" />
+              <img src={iconinstagram.url} alt="Icon Instagram" />
+            </nav>
+            <ul>
+              <li>{facebook}</li>
+              <li>{twitter}</li>
+              <li>{linkedin}</li>
+              <li>{youtube}</li>
+              <li>{instagram}</li>
+            </ul>
+          </section>
         </S.Box>
         <S.Box>
           <S.Title>{newsletter}</S.Title>
-          <S.Subscribe>{subscribe}</S.Subscribe>
+          <article>
+            <input />
+            <button>{subscribe}</button>
+          </article>
         </S.Box>
       </S.Container>
+      <S.Copy>
+        <p>{copyright}</p>
+      </S.Copy>
     </>
   );
 }
