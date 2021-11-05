@@ -11,7 +11,6 @@ export const Transitionfooter = styled.section`
 export const Container = styled.section`
   display: flex;
   flex-direction: row;
-
   background: rgba(19,19,19,1);
 `;
 export const Copy = styled.section`
@@ -33,12 +32,14 @@ export const Box = styled.div`
   }
   ul {
     color: white;
-    padding-left: 1vw;
     list-style: none;
-    padding-bottom: 1vw;
   }
   li {
-    padding-bottom: 1vw;
+    margin-bottom:1rem;
+    width:6rem;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
   }
   div {
     display: flex;
@@ -61,8 +62,7 @@ export const Box = styled.div`
     justify-content: space-between;
   }
   img {
-    width: 1.5vw;
-    padding-bottom: 1vw;
+    width:15%;
   }
 
   section {

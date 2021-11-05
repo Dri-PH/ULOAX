@@ -89,38 +89,58 @@ export function Footer() {
           <S.Title>{links}</S.Title>
           <section>
             <nav>
-              <img src={icon.url} alt="icon " />
-              <img src={icon.url} alt="Icon " />
-              <img src={icon.url} alt="Icon " />
-              <img src={icon.url} alt="Icon " />
-              <img src={icon.url} alt="Icon " />
+              <ul>
+                <li>
+                  <img src={icon.url} alt="icon " />
+                  <a>{home}</a>
+                </li>
+                <li>
+                  <img src={icon.url} alt="icon " />
+                  <a>{about}</a>
+                </li>
+                <li>
+                  <img src={icon.url} alt="icon " />
+                  <a>{taxi}</a>
+                </li>
+                <li>
+                  <img src={icon.url} alt="icon " />
+                  <a>{booking}</a>
+                </li>
+                <li>
+                  <img src={icon.url} alt="icon " />
+                  <a>{contactus}</a>
+                </li>
+              </ul>
             </nav>
-            <ul>
-              <li>{home}</li>
-              <li>{about}</li>
-              <li>{taxi}</li>
-              <li>{booking}</li>
-              <li>{contactus}</li>
-            </ul>
           </section>
         </S.Box>
         <S.Box>
           <S.Title>{followus}</S.Title>
           <section>
             <nav>
-              <img src={iconfacebook.url} alt="icon Facebook" />
-              <img src={icontwitter.url} alt="Icon Twitter" />
-              <img src={iconlinkedin.url} alt="Icon linkedin" />
-              <img src={iconyoutube.url} alt="Icon Youtube" />
-              <img src={iconinstagram.url} alt="Icon Instagram" />
+              <ul>
+                <li>
+                  <img src={iconfacebook.url} alt="icon Facebook" />
+                  <a>{facebook}</a>
+                </li>
+                <li>
+                  <img src={icontwitter.url} alt="Icon Twitter" />
+                  <a>{twitter}</a>
+                </li>
+                <li>
+                  <img src={iconlinkedin.url} alt="Icon linkedin" />
+                  <a>{linkedin}</a>
+                </li>
+                <li>
+                  <img src={iconyoutube.url} alt="Icon Youtube" />
+                  <a> {youtube}</a>
+                </li>
+                <li>
+                  <img src={iconinstagram.url} alt="Icon Instagram" />
+                  <a> {instagram}</a>
+                </li>
+              </ul>
             </nav>
-            <ul>
-              <li>{facebook}</li>
-              <li>{twitter}</li>
-              <li>{linkedin}</li>
-              <li>{youtube}</li>
-              <li>{instagram}</li>
-            </ul>
           </section>
         </S.Box>
         <S.Box>

@@ -43,14 +43,19 @@ export const SlydeCarousel = styled.div`
 export const SliderFace = styled.div`
     border:solid 2px red;
     display:flex;
-
+`;
+export const DivCar = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    border:solid 2px blue;
+    width:50%;
     div{
         filter: brightness(160%);
         background:#fd7e14;
         display:flex;
-        justify-content:center;
         width:25rem;
-
     }
     p{
         border:solid 2px red;
@@ -61,7 +66,7 @@ export const SliderFace = styled.div`
             content: "AGENDE AGORA";
             color: white;
             position: absolute;
-          }
+        }
     }
     figure{
         border:solid 2px red;
@@ -71,19 +76,51 @@ export const SliderFace = styled.div`
         width:100%;
     }
 `;
-export const DivCar = styled.div`
+export const DivReserva = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
-    border:solid 2px blue;
+    justify-content: center;
+    border:solid 2px green;
+    width:50%;
+    color:#fff;
     div{
-        filter: brightness(160%);
-        background:#fd7e14;
+        border:solid 2px green;
+        font-size:1.6rem;
+        width:36rem;
+    }
+    nav{
+        color:#000;
+        background:#fff;
         display:flex;
-        justify-content:center;
-        width:25rem;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        gap:1rem;
+        width:36rem;
+        height:20rem;
+    }
+    h2{
+        font-weight: lighter;
+    }
+    input{
+        width:90%;
+        height:2rem;
+        background:#eee;
+        border:none;
+    }
+    button{
+        align-self:flex-end;
+        margin:1rem;
+        color:#eee;
+        background: rgba(19,19,19,1);
+        border:none;
+        border-radius:5px;
+        width:7rem;
+        height:3rem;
+        filter: brightness(160%);
+        font-size:1.6rem;
 
     }
 `;
-
 //////////////////////////////////
