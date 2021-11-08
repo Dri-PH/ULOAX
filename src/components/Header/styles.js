@@ -35,7 +35,7 @@ export const Navbar = styled.div`
 `;
 export const SlydeCarousel = styled.div`
     background: rgba(19,19,19,1);
-    box-shadow: inset 0 0 50px 0 rgba(0,0,0,1);
+    box-shadow: inset 0 -40px 50px 0 rgba(0,0,0,1);
     color:red;
     width:100%;
 `;
