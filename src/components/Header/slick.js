@@ -72,75 +72,81 @@ export function Slick() {
  
         <>
           <Slider {...settings}>
-            <S.SliderFace>
-              <S.DivCar>
-                <div>
-                  <p>{paragraphagendeagr}</p>
-                </div>
-                <figure>
-                  <img src={taxipng1.url} alt="Taxi"/>
-                </figure>
-              </S.DivCar>
-              <S.DivReserva>
-                <div>
-                  <p>{paragraph}</p>
-                </div>
-                <nav>
-                  <h2>{divtitle}</h2>
-                  <input type="text" Placeholder="ESCOLHER" />
-                  <input type="text" Placeholder="DERRUBAR" />
-                  <input type="text" Placeholder="QUANDO" />
-            
-                  <button>{btnprocurar}</button>
-                </nav>
-              </S.DivReserva>
-            </S.SliderFace>
-            <S.SliderFace>
-              <S.DivCar>
-                <div>
-                  <p>{paragraphagendeagr}</p>
-                </div>
-                <figure>
-                  <img src={taxipng1.url} alt="Taxi"/>
-                </figure>
-              </S.DivCar>
-              <S.DivReserva>
-                <div>
-                  <p>{paragraph}</p>
-                </div>
-                <nav>
-                  <h2>{divtitle}</h2>
-                  <input type="text" Placeholder="ESCOLHER" />
-                  <input type="text" Placeholder="DERRUBAR" />
-                  <input type="text" Placeholder="QUANDO" />
-            
-                  <button>{btnprocurar}</button>
-                </nav>
-              </S.DivReserva>
-            </S.SliderFace>
-            <S.SliderFace>
-              <S.DivCar>
-                <div>
-                  <p>{paragraphagendeagr}</p>
-                </div>
-                <figure>
-                  <img src={taxipng1.url} alt="Taxi"/>
-                </figure>
-              </S.DivCar>
-              <S.DivReserva>
-                <div>
-                  <p>{paragraph}</p>
-                </div>
-                <nav>
-                  <h2>{divtitle}</h2>
-                  <input type="text" Placeholder="ESCOLHER" />
-                  <input type="text" Placeholder="DERRUBAR" />
-                  <input type="text" Placeholder="QUANDO" />
-            
-                  <button>{btnprocurar}</button>
-                </nav>
-              </S.DivReserva>
-            </S.SliderFace>
+            <div>
+              <S.SliderFace>
+                <S.DivCar>
+                  <div>
+                    <p>{paragraphagendeagr}</p>
+                  </div>
+                  <figure>
+                    <img src={taxipng1.url} alt="Taxi"/>
+                  </figure>
+                </S.DivCar>
+                <S.DivReserva>
+                  <div>
+                    <p>{paragraph}</p>
+                  </div>
+                  <nav>
+                    <h2>{divtitle}</h2>
+                    <input type="text" Placeholder="ESCOLHER" />
+                    <input type="text" Placeholder="DERRUBAR" />
+                    <input type="text" Placeholder="QUANDO" />
+              
+                    <button>{btnprocurar}</button>
+                  </nav>
+                </S.DivReserva>
+              </S.SliderFace>
+            </div>
+            <div>
+              <S.SliderFace>
+                <S.DivCar>
+                  <div>
+                    <p>{paragraphagendeagr}</p>
+                  </div>
+                  <figure>
+                    <img src={taxipng2.url} alt="Taxi"/>
+                  </figure>
+                </S.DivCar>
+                <S.DivReserva>
+                  <div>
+                    <p>{paragraph}</p>
+                  </div>
+                  <nav>
+                    <h2>{divtitle}</h2>
+                    <input type="text" Placeholder="ESCOLHER" />
+                    <input type="text" Placeholder="DERRUBAR" />
+                    <input type="text" Placeholder="QUANDO" />
+              
+                    <button>{btnprocurar}</button>
+                  </nav>
+                </S.DivReserva>
+              </S.SliderFace>
+            </div>
+            <div>
+              <S.SliderFace>
+                <S.DivCar>
+                  <div>
+                    <p>{paragraphagendeagr}</p>
+                  </div>
+                  <figure>
+                    <img src={taxipng1.url} alt="Taxi"/>
+                  </figure>
+                </S.DivCar>
+                <S.DivReserva>
+                  <div>
+                    <p>{paragraph}</p>
+                  </div>
+                  <nav>
+                    <h2>{divtitle}</h2>
+                    <input type="text" Placeholder="ESCOLHER" />
+                    <input type="text" Placeholder="DERRUBAR" />
+                    <input type="text" Placeholder="QUANDO" />
+              
+                    <button>{btnprocurar}</button>
+                  </nav>
+                </S.DivReserva>
+              </S.SliderFace>
+            </div>
           </Slider>
       </>      
   

@@ -41,7 +41,6 @@ export const SlydeCarousel = styled.div`
 `;
 ////////////Slick.js//////////////
 export const SliderFace = styled.div`
-    border:solid 2px red;
     display:flex;
 `;
 export const DivCar = styled.div`
@@ -49,7 +48,6 @@ export const DivCar = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    border:solid 2px blue;
     width:50%;
     div{
         filter: brightness(160%);
@@ -58,7 +56,6 @@ export const DivCar = styled.div`
         width:25rem;
     }
     p{
-        border:solid 2px red;
         text-align:center;
         font-size:2.5rem;
         color:black;
@@ -69,7 +66,6 @@ export const DivCar = styled.div`
         }
     }
     figure{
-        border:solid 2px red;
         width:30rem;
     }
     img{
@@ -81,11 +77,9 @@ export const DivReserva = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    border:solid 2px green;
     width:50%;
     color:#fff;
     div{
-        border:solid 2px green;
         font-size:1.6rem;
         width:36rem;
     }
